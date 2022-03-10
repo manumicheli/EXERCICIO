@@ -1,0 +1,38 @@
+public class Ponto {
+
+private int  x,y;
+
+public Ponto(int x, int y) {
+this.x=x; this.y=y;
+	
+}
+
+
+public Ponto() {
+this.x=0;this.y=0;
+
+}
+
+
+public boolean verificarPontos(Ponto ponto) {
+	if(this.x==ponto.x && this.y==ponto.y) {
+		return true;
+		
+	}
+	return false;
+		
+		
+}
+
+public double CalcularDistancia(Ponto ponto) {
+	double distancia;
+	distancia = (double)Math.sqrt(Math.pow(this.x - ponto.x,2)
+			+Math.pow(this.y - ponto.y, 2));
+	
+	return distancia;
+ 
+	
+
+}
+
+}		
